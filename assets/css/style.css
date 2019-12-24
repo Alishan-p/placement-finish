@@ -72,7 +72,7 @@ header {
 .btn__register {
   padding: 0.8rem 1.5rem;
   text-transform: uppercase;
-  background-color: #6c63ff;
+  background-color: #3d31ff;
   border: 1px solid #c7d0d8;
   border-radius: 10px;
   color: white;
@@ -92,9 +92,7 @@ section#about {
   font-family: "montserrat";
   text-transform: uppercase;
   font-weight: 400;
-  /* text-align: center; */
-  color: #00a7cc;
-  /* font-size: 4rem; */
+  color: #25283d;
   font-size: 3rem;
 }
 
@@ -106,13 +104,12 @@ section .about--p {
 }
 
 #careers,
-#sponsors,
 #contact {
   background: #fafafa;
 }
 
 #placement .row,
-#sponsors .row,
+#sponsor .row,
 #careers .row {
   align-items: flex-end;
   text-align: center;
@@ -120,12 +117,12 @@ section .about--p {
 
 #placement img,
 #careers img,
-#sponsors img {
+#sponsor img {
   width: 100%;
 }
 
 #placement p,
-#sponsors p,
+#sponsor p,
 #careers p {
   padding-bottom: 2rem;
 }
@@ -140,16 +137,23 @@ section .about--p {
   padding-bottom: 2rem;
 }
 
-.flexbox {
+#calltoaction {
   text-align: center;
-  max-width: 150px;
-  padding-bottom: 3rem;
+  background: #0e4749;
+  font-family: montserrat;
 }
 
-.flexbox .image img {
-  width: 100%;
-  min-height: 150px;
-  padding-bottom: 1rem;
+#calltoaction h1 {
+  color: #f2f2f2;
+}
+
+#calltoaction p {
+  padding-top: 0.5rem;
+  font-style: italic;
+  font-size: 1.8rem;
+  letter-spacing: 3px;
+  color: #dcdcdc;
+  padding-bottom: 1.5rem;
 }
 
 .card {
@@ -162,15 +166,31 @@ section .about--p {
 .card:hover {
   box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
 }
-Avatarinside the card container */ .container {
+/*Avatarinside the card container */
+.card .container {
   padding: 2px 16px;
 }
 
-#sponsors .card img {
+#team .card {
+  height: auto;
+  width: 200px;
+}
+
+#team .card img {
+  height: 200px;
+  width: auto;
+}
+
+#sponsor .card img {
+  padding-top: 2rem;
   width: 50%;
 }
 
-#sponsors .card {
+#sponsor .card:last-child img {
+  width: 30%;
+}
+
+#sponsor .card {
   display: grid;
   justify-content: center;
   justify-items: center;
@@ -182,7 +202,13 @@ Avatarinside the card container */ .container {
 }
 
 .footer {
-  background-color: #c7d0d8;
+  background-color: #343a40;
+  color: #e0e0e0;
+  text-align: center;
+}
+
+.footer a img {
+  width: 20px;
 }
 
 @media only screen and (max-width: 768px) {
@@ -223,13 +249,12 @@ Avatarinside the card container */ .container {
     width: 70%;
   }
 
-  #placement .flexbox .image img {
-    min-height: 0px;
+  .heading {
+    font-size: 2.2rem;
   }
 
-  .card-sponser {
-    width: 100%;
-    height: 100%;
+  .footer {
+    text-align: center;
   }
 }
 
