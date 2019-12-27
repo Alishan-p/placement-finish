@@ -186,10 +186,6 @@ section .about--p {
   width: 50%;
 }
 
-#sponsor .card:last-child img {
-  width: 30%;
-}
-
 #sponsor .card {
   display: grid;
   justify-content: center;
